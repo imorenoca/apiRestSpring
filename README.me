@@ -1,0 +1,28 @@
+# Realización de la guía Springboot full rest.
+
+1. Ir a la página https://start.spring.io/ 
+2. Selecciones realizadas:
+	- Maven 
+	- Java  
+	- Springboot 3.5.5
+	- war  
+	- Java 21  
+	- Dependencias:  
+		- Spring Web
+		- Spring Data JPA
+		- H2 Database
+3. Se baja el proyecto *.zip y abrimos desde el IDE: 
+	File>Open Proyect from File System>Import.
+	
+# El proyecto consta de 4 módulos:
+	## 1. The Story So Far (nonrest)
+	
+	Se va a crear un sistema simple de nóminas de los empleados de una compañía.
+	Se van a almacenar los objetos en H2 memoria, y acceder a ellos a traves de JPA.
+	
+	Dentro de src/main/java, creamos un nuevo paquete payroll, y dentro la clase
+	Employee.
+	
+	Como buena práctica de la creación de la clase Employee, me han llamado la atención
+	la creación de los métodos equals y hashCode, para comprobar si los objetos son 
+	iguales, más detalles en el código. 
