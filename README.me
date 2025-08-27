@@ -25,4 +25,23 @@
 	
 	Como buena práctica de la creación de la clase Employee, me han llamado la atención
 	la creación de los métodos equals y hashCode, para comprobar si los objetos son 
-	iguales, más detalles en el código. 
+	iguales, más detalles en el código.
+	
+	Lo siguiente es acceder a los datos, se declara el interface EmployeeRepository.java que automáticamente
+	puede:
+	
+	- Crear nuevos empleados.
+	- Actualizar los existentes.
+	- Eliminar los empleados.
+	- Encontrar empledos, uno, todos o buscar por propiedades. 
+	
+	Para conseguir esto tenemos que declarar una interface que extienda de Spring DAta JPA's repository,
+	especificando el dominio tipo Employee y la id como tipo Long.
+	
+	PayrollApplication.java levanta un contener sevlet y el servidor de nuestro servicio.
+	
+	Lo siguiente es crear LoadDatabase.
+	
+	Para poder ejecutar el programa la clase que lo inicia debe estar en el mismo paquete: PayrollAplication.java
+	
+	
