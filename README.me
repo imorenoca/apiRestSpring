@@ -1,5 +1,7 @@
 # Realización de la guía Springboot full rest.
 
+https://spring.io/guides/tutorials/rest
+
 1. Ir a la página https://start.spring.io/ 
 2. Selecciones realizadas:
 	- Maven 
@@ -17,11 +19,9 @@
 # El proyecto consta de 4 módulos:
 	## 1. The Story So Far (nonrest)
 	
-	Se va a crear un sistema simple de nóminas de los empleados de una compañía.
-	Se van a almacenar los objetos en H2 memoria, y acceder a ellos a traves de JPA.
+	Se va a crear un sistema simple de nóminas de los empleados de una compañía y almacenar los objetos en H2 memoria, y acceder a ellos a traves de JPA.
 	
-	Dentro de src/main/java, creamos un nuevo paquete payroll, y dentro la clase
-	Employee.
+	Dentro de src/main/java, creamos un nuevo paquete payroll, y dentro la clase Employee.
 	
 	Como buena práctica de la creación de la clase Employee, me han llamado la atención
 	la creación de los métodos equals y hashCode, para comprobar si los objetos son 
@@ -42,6 +42,18 @@
 	
 	Lo siguiente es crear LoadDatabase.
 	
-	Para poder ejecutar el programa la clase que lo inicia debe estar en el mismo paquete: PayrollAplication.java
+	Para poder ejecutar el programa la clase que lo inicia debe estar en el mismo paquete: PayrollAplication.java.
+	
+	El siguiente paso es la creación del controlador de la clase Employee. Va actuar como punto de entrada para las interacciones del cliente:
+	
+	- Manejo de peticiones HTTP
+	- Gestión de Endpoints (rutas).
+	
+	@RestController - la clase es un controlador Rest para cada operación.
+	El constructor inyecta un EmployeeRepository con el controlador.
+	
+	- Se crea la excepción.
+	
+	Se incluye una clase para manejar los estados del servidor HTTP.
 	
 	
