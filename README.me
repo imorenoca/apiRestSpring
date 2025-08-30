@@ -56,4 +56,19 @@ https://spring.io/guides/tutorials/rest
 	
 	Se incluye una clase para manejar los estados del servidor HTTP.
 	
+	En el directorio del proyecto:
+		- mvn clean spring-boot:run
+		- curl -v localhost:8080/employees
+	
+	Se introduce una clase de prueba en tests para RestController con ayuda de Geminis
+	mvn clean compile
+	mvn test
+	
+	Cuando se ejecuta mvn test, Maven utiliza el plugin maven-surefire-plugin por defecto.
+	En target>surefire-reports están los resultados de los test.
+	
+	
+	
+	
+	
 	
